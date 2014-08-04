@@ -1,0 +1,21 @@
+DIR: project_example
+DATABASE: sqlite:project_example.db 
+PUBLICATION: s3://warehouse.sandiegodata.org/project_example#compress 
+UID: 7a007ac7-960f-468b-8ce3-7b9f83e34ea8
+TITLE: Just an example manifest
+ACCESS: public
+
+DOC:
+
+This is an exmaple manifest. 
+
+# Files
+
+EXTRACT: d02M005_hitnrun_cleaned AS csv TO hnr0914.csv
+EXTRACT: d00l005_collisions AS csv TO collisions.csv
+
+
+PARTITIONS:
+
+example.com-random-example1-0.0.2
+example.com-simple-orig-example-0.1.2
